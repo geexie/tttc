@@ -1,6 +1,6 @@
 # Lectures
 
-1. *22-01-2021*: Course introduction. Modern compiler architecture.
+1. *22-01-2021*: [Course introduction. Modern compiler architecture](lectures/intro.md)
 1. *29-01-2021*: 
 1. *05-02-2021*: 
 1. *12-02-2021*: 
