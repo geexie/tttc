@@ -2,7 +2,7 @@
 
 Supplementary materials for **Pragmatic compiler design** course
 
-## Timeline
+## Syllabus
 
 | Date | leacture | practice |
 | --------------- | --------------- | --------------- |
