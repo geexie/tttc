@@ -1,5 +1,8 @@
 # PCD
-Supplementary materials for Pragmatic compiler design course
+
+Supplementary materials for **Pragmatic compiler design** course
+
+## Timeline
 
 | Date | leacture | practice |
 | --------------- | --------------- | --------------- |
@@ -18,3 +21,16 @@ Supplementary materials for Pragmatic compiler design course
 |16-04-2021|	Instruction scheduling|Introduction of MLIR |
 |23-04-2021|	Register allocation. Linear scan register allocation|Emitting MLIR |
 |30-04-2021|	Concluding words|Transformation over MLIR |
+
+## Lab work
+
+1. Writing an LLVM pass
+1. Extending toy language with custom operator
+
+## Sutup
+
+1. Linux/MacOS
+1. online over Zoom
+1. VSCode
+1. OCaml
+1. LLVM
