@@ -27,8 +27,8 @@ Supplementary materials for **Theory and tools of translation and compilation** 
 
 | Date | lecture | practice |
 | --------------- | --------------- | --------------- |
-|22-01-2021|	[~~Modern compiler architecture~~](lectures/0-modern-compiler-architecture.md) |	Setup OCaml development with VSCode |
-|29-01-2021|	Lexical analysis|OCaml: basics |
+|22-01-2021|	[~~Modern compiler architecture~~](lectures/0-modern-compiler-architecture.md) |	 [Introduction](practices/p0/assignment.md)|
+|29-01-2021|	Lexical analysis|Setup OCaml development with VSCode. OCaml: basics |
 |05-02-2021|	Top down parsing|Introduction of LLVM project structure  |
 |12-02-2021|	Bottom up parsing|Building LLVM sources  |
 |19-02-2021|	Abstract syntax| Implementing lexer|
