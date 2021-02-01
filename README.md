@@ -25,13 +25,13 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 
 ## Syllabus
 
-| Date     | lecture                                                                           | practice                                    |
-| -------- | --------------------------------------------------------------------------------- | ------------------------------------------- |
-|22-01-2021|	[~~Modern compiler architecture~~](lectures/0-modern-compiler-architecture.md) | [Introduction](practices/p0/assignment.md)  |
-|29-01-2021|	[~~Lexical analysis~~](lectures/1-lexical-analysis.md)                         | LLVM - analysis pass: developing with LLVM  |
-|05-02-2021|	[Grammar](lectures/2-grammar.md)                                               | LLVM - analysis pass: Writing counting pass |
-|12-02-2021|	Top down/Bottom up parsing                                                     | LLVM - analysis pass: Discussion |
-|19-02-2021|	Abstract syntax                                                                | LLVM - transformation pass: |
+| Date         | lecture                                                                           | practice                                                     |
+| ------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+|~~22-01-2021~~|	[~~Modern compiler architecture~~](lectures/0-modern-compiler-architecture.md) | [~~Setting up for the course~~](practices/p0/assignment.md)  |
+|~~29-01-2021~~|	[~~Lexical analysis~~](lectures/1-lexical-analysis.md)                         | [~~Building llvm from sources~~](practices/p1/assignment.md) |
+|**05-02-2021**|	[Grammar](lectures/2-grammar.md)                                               | [Developing with LLVM](practices/p2/assignment.md) |
+|12-02-2021|	Top down/Bottom up parsing                                                     | LLVM - analysis pass: Writing counting pass |
+|19-02-2021|	Abstract syntax                                                                | LLVM - analysis pass: Discussion |
 |26-02-2021|	Semantic analysis. Names                                                       | LLVM - transformation pass: |
 |05-03-2021|	Semantic Analysis. Types                                                       | LLVM - transformation pass: Discussion|
 |12-03-2021|	Intermediate representation                                                    | Toy language: Setup OCaml development with VSCode. OCaml: basics |
@@ -59,8 +59,7 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 
 ## Scoring
 
-1. practices
-1. lab works
-1. Final test
+1. 4 lab works 0.15 each (Analysis pass, transformation pass, toy language, MLIR dialect)
+1. 2 final tests 0.20 each
 
 One can skip final test by passing all practices and lab works.
