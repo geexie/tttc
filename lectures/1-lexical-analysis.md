@@ -1,4 +1,6 @@
-# The Lexer
+# Lexer, Parser and Context free grammar
+
+## The Lexer
 
 Source code ---> [Scanner] ---> char ---> [Tokenizer] ---> token ...
 
@@ -10,6 +12,8 @@ Source code ---> [Scanner] ---> char ---> [Tokenizer] ---> token ...
 - Checks for errors (how many tokens and what are those responsibilities)
 
 *Typical tokens include number, identifier, +, –, new, while, if*
+
+Most popular tool for automatic generation: LEX
 
 ## Lexemes vs Tokens
 
@@ -96,8 +100,6 @@ let average a b =
 
 Answer: 13
 
-Most popular tool for automatic generation: LEX
-
 ## The Parser - Syntax analyzer
 
 1. Takes language grammar. Language of G, L(G), are all the words reachable from the start symbol.
@@ -105,7 +107,7 @@ Most popular tool for automatic generation: LEX
 
 Most popular tool for automatic generation: YACC
 
-## CFG
+## CFG (Context free grammar)
 
 Context free grammar is a formal grammar which is used to generate all possible strings in a given formal language.
 Context free grammar G can be defined by four tuples as:
@@ -203,7 +205,7 @@ E => E + id * id
 E => id + id * id
 ```
 
-## parse tree
+## Parse tree
 
 A parse tree (derivation tree) is an ordered rooted tree that graphically represents
  the semantic information a string derived from a context-free grammar.
