@@ -29,27 +29,26 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 | ------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 |~~22-01-2021~~|	[~~Modern compiler architecture~~](lectures/0-modern-compiler-architecture.md) | [~~Setting up for the course~~](practices/p0/assignment.md)  |
 |~~29-01-2021~~|	[~~Lexical analysis~~](lectures/1-lexical-analysis.md)                         | [~~Building llvm from sources~~](practices/p1/assignment.md) |
-|**05-02-2021**|	[Grammar](lectures/2-grammar.md)                                               | [Developing with LLVM](practices/p2/assignment.md) |
-|12-02-2021|	Top down/Bottom up parsing                                                     | [LLVM analysis pass: Writing statement counting pass]() |
-|19-02-2021|	Abstract syntax                                                                | Assignment #1: Discussion |
-|26-02-2021|	Semantic analysis. Names & Types                                               | [LLVM transformation pass: Writing algebraic simplification]()|
-|05-03-2021|	Intermediate representation                                                    | Assignment #2: Discussion|
-|12-03-2021|	SSA                                                                            | [Toy language: Setup OCaml development with VSCode. OCaml: basics]() |
-|19-03-2021|	Compiler optimizations                                                         | [Toy language: custom operator]() |
-|26-03-2021|	Code generation. Multi-level IR                                               | Assignment #3: Discussion |
-|02-04-2021|	Liveness                                                                       | [MLIR introduction]() |
-|09-04-2021|	Instruction selection                                                          | [MLIR: custom dialect]() |
-|16-04-2021|	Instruction scheduling                                                         | Assignment #4: Discussion |
-|23-04-2021|	Register allocation. Linear scan register allocation                           | Final Test 2|
-
-|30-04-2021|	Concluding words                                                               | Final Test 1|
+|~~05-02-2021~~|	[~~Grammar~~](lectures/2-grammar.md)                                           | [~~Developing with LLVM~~](practices/p2/assignment.md)       |
+|**12-02-2021**|	Top down/Bottom up parsing, abstract syntax                                    | [LLVM analysis pass: Writing statement counting pass]() |
+|  19-02-2021  |	Semantic analysis. SDT                                                         | Assignment #1: Discussion |
+|  26-02-2021  |	Intermediate representation                                                    | [LLVM transformation pass: Writing algebraic simplification]()|
+|  05-03-2021  |	SSA, Phi-nodes                                                                 | Assignment #2: Discussion|
+|  12-03-2021  |	Compiler optimizations: 1                                                      | [Toy language: Setup OCaml development with VSCode. OCaml: basics]() |
+|  19-03-2021  |	Compiler optimizations: 2                                                      | [Toy language: custom operator]() |
+|  26-03-2021  |	Code generation. Multi-level IR                                                | Assignment #3: Discussion |
+|  02-04-2021  |	Liveness                                                                       | [MLIR introduction]() |
+|  09-04-2021  |	Instruction selection                                                          | [MLIR: custom dialect]() |
+|  16-04-2021  |	Instruction scheduling                                                         | Assignment #4: Discussion |
+|  23-04-2021  |	Register allocation. Linear scan register allocation                           | Final Test 2|
+|  30-04-2021  |	Concluding words                                                               | Final Test 1|
 
 ## Lab work
 
 1. Writing an LLVM pass
 1. Extending toy language with custom operator
 
-## Sutup
+## Setup
 
 1. Practices presented in \*nix environment
 1. Linux/MacOS

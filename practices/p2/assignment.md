@@ -14,7 +14,7 @@ Separate phases can be called
 
 1. preprocessing
     ```
-    $ ./bin/clang toy_p.c -E
+    $ ./bin/clang toy_v.c -E
     # 1 "bin/toy.c"
     # 1 "<built-in>" 1
     # 1 "<built-in>" 3
@@ -73,21 +73,3 @@ Separate phases can be called
         $ gcc hello.s -o hello.native
         $ ./hello.native
         ```
-
-## Opt tool
-
-clang –S -O1 -emit-llvm -Xclang -disable-O0-optnone benchmark_0.cpp -o benchmark_0_interm.ll
-`-O1` to get in canonicalized form
-`-emit-llvm` output in LLVM IR
-The `-Xclang -disable-O0-optnone` flag ensures that Clang will allow later optimizations even when initially compiling without any
-opt -loop-vectorize -S benchmark_0_interm.ll -o benchmark_0_opt.ll
-clang benchmark_0_opt.ll -o benchmark_0
-./ benchmark_0
-
-```
-./bin/opt --help-hidden – Prints all available options
-./bin/opt -load lib/LLVMCustom.dylib -custom -S test.ll -o test_opt.ll ll – Loads custom pass
-./bin/opt  -dot-cfg - Print CFG of function to 'dot' file
-./bin/opt  -dot-callgraph - Print call graph to 'dot' file
-./bin/opt  -dot-dom - Print dominance tree of function to 'dot' file
-```
