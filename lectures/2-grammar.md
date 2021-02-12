@@ -171,7 +171,7 @@ S => 01S'
 S' => e / 0S1SS'
 ```
 
-## Making nondeterministic grammar deterministic
+## 3. Making nondeterministic grammar deterministic
 
 ```
 A => åß1
