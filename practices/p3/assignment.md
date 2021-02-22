@@ -105,6 +105,7 @@ Eg: `BasicBlock` is a subclass of just Value
     1. ./bin/opt -disable-output -stats toy_v.ll -passes=helloworld
 1. Task 1: write a pass Counting only function definitions, loops, Basic blocks, Arithmetic instructions of type add and mull.
     1. Please submit your solutions as a MR to a [fork](https://github.com/geexie/llvm-project) with pass name which can be identified with you (`<github_name>`, `<name>-<family_name>` etc)
+    1. Use option `-time-passes` to collect performance statistics about passes execution breakdown
 
 ## Links
 

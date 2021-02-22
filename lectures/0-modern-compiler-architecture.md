@@ -60,7 +60,7 @@ Compiler construction involves ideas from many different parts of computer scien
     - Fixed-point algorithms
 - Systems
     - Allocation & naming
-    - Synchronisation, locality
+    - Synchronization, locality
 - Architecture
     - Pipeline & memory hierarchy management Instruction set
 - Software engineering

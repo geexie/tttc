@@ -32,6 +32,7 @@ w2: i + i * i
    ```
 
 Ex:
+
 ```
 i ^ i ^ i
 
@@ -40,7 +41,9 @@ T => T * F / F
 F => G ^ F / G
 G => i
 ```
+
 Ex :
+
 ```
 B => B or B
    / B and B
@@ -48,9 +51,11 @@ B => B or B
    / TRUE
    / FALSE
 ```
+
 or  3 left
 and 2 left
 not 1
+
 ```
 B => B or D
    / D
@@ -58,7 +63,9 @@ D => D and C
    / C
 C => not C / TRUE / FALSE
 ```
+
 Ex:
+
 ```
 R => R + R
    / R | R
@@ -73,13 +80,16 @@ R => R + P / P
 P => PD / D
 D => D* /a/b/c
 ```
+
 Ex:
+
 ```
 A => A $ B / B
 B => B # C / C
 C => C @ D / D
 D => å
 ```
+
 \$ 3
 \# 2
 \@ 1
@@ -101,15 +111,15 @@ F => F - F
 
 1. left - side
 
-```
-A => Aå / ß
-```
+   ```
+   A => Aå / ß
+   ```
 
 1. right - size
 
-```
-A => åA / ß
-```
+   ```
+   A => åA / ß
+   ```
 
 ```
 A => Aå
@@ -181,6 +191,11 @@ A => åß1
 W: åß3
 ```
 
+```
+A => åA'
+A' => ß1/ß2/ß3
+```
+
 Backtracking (especially top-down parsers)
 
 Left factoring
@@ -193,6 +208,7 @@ A' => ß1
 ```
 
 Ex1:
+
 ```
 S => iEtS
    / iEtSeS
@@ -200,6 +216,13 @@ S => iEtS
 
 E => ß
 ```
+
+```
+S => iEtSS'/å
+S' => e/eS
+E => ß
+```
+
 deterministic?
 
 ambiguous?
@@ -213,6 +236,49 @@ S => aSSbS
    / b
 ```
 
+S => aSS'
+   / abb
+   / b
+```
+
+```
+S' => SbS
+    / aSb
+```
+
+```
+S => aS"
+   / b
+S" => SS'
+    / bb
+S' => SbS
+    / aSb
+```
+
+```
+S => aSSbS
+   / aSaSb
+   / abb
+   / b
+```
+
+```
+S => aS'
+   / b
+S' => SSbS
+    / SaSb
+    / bb
+```
+
+```
+S => aS'
+   / b
+S' => SS"
+    / bb
+S" => SbS
+    / aSb
+```
+
 Ex2:
 
 ```
@@ -222,12 +288,25 @@ S => bSSaaS
    / a
 ```
 
+```
+S => bSS'
+   / a
+
+S' => SaS"
+    / b
+
+S" => aS
+    / Sb
+```
+
 Ex3:
 
 ```
 A => aA
-B => bB
+B => aB
 ```
+
+# Concluding words
 
 1. ambiguous <- G -> **unambiguous**
 2. left-recursive <- G -> **right-recursive**
