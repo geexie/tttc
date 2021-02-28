@@ -25,23 +25,23 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 
 ## Syllabus
 
-| Date         | lecture                                                                        | practice                                                         |
-| ------------ | ------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-|~~22-01-2021~~| [~~Modern compiler architecture~~](lectures/0-modern-compiler-architecture.md) | [~~Setting up for the course~~](practices/p0/assignment.md)      |
-|~~29-01-2021~~| [~~Lexical analysis~~](lectures/1-lexical-analysis.md)                         | [~~Building llvm from sources~~](practices/p1/assignment.md)     |
-|~~05-02-2021~~| [~~Grammar:ambiguity and left-recursion~~](lectures/2-grammar.md)              | [~~Developing with LLVM~~](practices/p2/assignment.md)           |
-|~~12-02-2021~~| [~~Grammar: determinism. Parsers. AST~~](lectures/3-parser_taxonomy.md)        | [~~Lab #1: statement counting pass~~](practices/p3/assignment.md)|
-|~~19-02-2021~~| [~~Semantic analysis. SDT~~](lectures/4-semantic.md)                           | ~~Assignment #1: Discussion~~                                    |
-|**26-02-2021**| [Intermediate representation](lectures/5-ir.md)                                | [Lab #2: algebraic simplification](practices/p4/assignment.md)   |
-|  05-03-2021  | SSA, Phi-nodes                                                                 | Assignment #2: Discussion                                    |
-|  12-03-2021  | Compiler optimizations: 1                                                      | [Toy language: Setup OCaml with VSCode. OCaml: basics]() |
-|  19-03-2021  | Compiler optimizations: 2                                                      | [Toy language: custom operator]() |
-|  26-03-2021  | Code generation. Multi-level IR                                                | Assignment #3: Discussion                                    |
-|  TBD  | Liveness                                                                       | [MLIR introduction]() |
+| Date         | lecture                                                                        | practice                                                           |
+| ------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+|~~22-01-2021~~| [~~Modern compiler architecture~~](lectures/0-modern-compiler-architecture.md) | [~~Setting up for the course~~](practices/p0/assignment.md)        |
+|~~29-01-2021~~| [~~Lexical analysis~~](lectures/1-lexical-analysis.md)                         | [~~Building llvm from sources~~](practices/p1/assignment.md)       |
+|~~05-02-2021~~| [~~Grammar:ambiguity and left-recursion~~](lectures/2-grammar.md)              | [~~Developing with LLVM~~](practices/p2/assignment.md)             |
+|~~12-02-2021~~| [~~Grammar: determinism. Parsers. AST~~](lectures/3-parser_taxonomy.md)        | [~~Lab #1: statement counting pass~~](practices/p3/assignment.md)  |
+|~~19-02-2021~~| [~~Semantic analysis. SDT~~](lectures/4-semantic.md)                           | ~~Assignment #1: Discussion~~                                      |
+|~~26-02-2021~~| [~~Intermediate representation~~](lectures/5-ir.md)                            | [~~Lab #2: algebraic simplification~~](practices/p4/assignment.md) |
+|**05-03-2021**| [SSA, Phi-nodes, CFG](lectures/5-ssa.md)                                       | Assignment #2: Discussion                                          |
+|  12-03-2021  | Compiler optimizations: 1                                                      | [Toy language](practices/p5/assignment.md)                         |
+|  19-03-2021  | Compiler optimizations: 2                                                      | [Lab #3: custom operator](practices/p6/assignment.md)              |
+|  26-03-2021  | Code generation. Multi-level IR                                                | Assignment #3: Discussion          |
+|  TBD  | Liveness                                                                       | [MLIR introduction]()  |
 |  TBD  | Instruction selection                                                          | [MLIR: custom dialect]() |
 |  TBD  | Instruction scheduling                                                         | Assignment #4: Discussion                                    |
-|  TBD  | Register allocation. Linear scan register allocation                           | Final Test 2                                                 |
-|  TBD  | Concluding words                                                               | Final Test 1                                                 |
+|  TBD  | Register allocation. Linear scan register allocation                           | Practices wrap up                                                 |
+|  TBD  | Concluding words. Final Test 2                                                 | Final Test 2                                                 |
 
 ## Lab work
 
