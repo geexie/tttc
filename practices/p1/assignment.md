@@ -47,6 +47,30 @@
     ./toy
     ```
 
+**Windows**  
+1. Get all the stuff:  
+Git.  
+CMake.   
+Visual Studio 2017 or later  
+GnuWin32 tools  
+
+2.
+```  
+git clone --config core.autocrlf=false https://github.com/llvm/llvm-project
+cd llvm-project
+mkdir build
+cd build
+cmake -DLLVM_ENABLE_PROJECTS=clang -G "Visual Studio 16 2019" -A x64 -Thost=x64 ../llvm  
+```  
+Notes:   
+	a) in "Visual Studio 16 2019" you have to use your Visual Studio version  
+	b) it has to be the first build with this parameters for llvm-project directory (you can get an error of CmakeCache)  
+	
+3. Open LLVM.sln in Visual Studio, in VS open CMakePredefinedTargets, right click on ALL_BUILD and choose build.  
+
+4. Check out Debug/bin in build directory. clang and other tools have to be there.  
+
+
 ### Troubleshooting
 
 It might ask to explicitly specify path to your system header directory to clang since we run clang not from installation directory.
