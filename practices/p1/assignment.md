@@ -70,6 +70,8 @@ Notes:
 
 4. Check out Debug/bin in build directory. clang and other tools have to be there.  
 
+5. For a quick build, after changing the passes, you only need to rebuild `opt` project. Open LLVM.sln in Visual Studio, and choose `opt` for build. `Build`-> `Projects`-> `opt` 
+
 
 ### Troubleshooting
 
