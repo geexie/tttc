@@ -34,16 +34,16 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 |~~19-02-2021~~| [~~Semantic analysis. SDT~~](lectures/4-semantic.md)                           | ~~Assignment #1: Discussion~~                                      |
 |~~26-02-2021~~| [~~Intermediate representation~~](lectures/5-ir.md)                            | [~~Lab #2: algebraic simplification~~](practices/p4/assignment.md) |
 |~~05-03-2021~~| [~~SSA, Phi-nodes, CFG~~](lectures/6-ssa.md)                                   | ~~Assignment #2: Discussion~~                                      |
-|**12-03-2021**| [Compiler optimizations](lectures/7-optimizations.md)                          | [Lab #3: analysis pass](practices/p5/assignment.md)                |
-|  19-03-2021  | Compiler optimizations: 2                                                      | Assignment #3: Discussion                                          |
-|  26-03-2021  | Code generation. Multi-level IR                                                | [Toy language](practices/p6/assignment.md)                         |
+|~~12-03-2021~~| [~~Compiler optimizations~~](lectures/7-optimizations.md)                      | [~~Lab #3: analysis pass~~](practices/p5/assignment.md)            |
+|**19-03-2021**| [Compiler optimizations](lectures/7-optimizations.md)                          | Assignment #3: Discussion                                          |
+|  26-03-2021  | [Code generation. Multi-level IR](lectures/8-codegen.md)                       | [Toy language](practices/p6/assignment.md)                         |
 |  TBD  | Liveness                                                                       | [Lab #4: custom operator](practices/p6/assignment.md)                     |
 |  TBD  | Instruction selection                                                          | Assignment #4: Discussion                                                 |
 |  TBD  | Instruction scheduling                                                         | [MLIR introduction](practices/p7/assignment.md)                           |
 |  TBD  | Register allocation. Linear scan register allocation                           | [MLIR: custom dialect](practices/p8/assignment.md)                        |
 |  TBD  | Concluding words. Final Test 2                                                 | Final Test 2                                                              |
 
-## Lab work
+## Lab works
 
 1. Writing statistics pass
 1. Writing transformation pass
