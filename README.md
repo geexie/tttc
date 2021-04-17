@@ -4,9 +4,10 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 
 ## This course contains of
 
-1. weekly 15 lectures
-1. weekly 15 weekly practical exercises
+1. weekly 14 lectures
+1. weekly 14 weekly practical exercises
 1. 4 course works
+1. 1 theory test
 
 Some supplementary materials can be found [here](links.md).
 
@@ -28,6 +29,20 @@ Some supplementary materials can be found [here](links.md).
     1. git
     1. CMake
 
+## List of practical exercises for LLVM introductory course
+
+- 01 + setting up & building & tools (clang, opt, llc)
+- 02 + empty pass (getting familiar with LLVM pass structure)
+- 03 + count pass (data structures & iterators in LLVM)
+- 04 + AS (getting familiar with transformation passes, deleting an instruction)
+- 05 + SR (creating an instruction, replacing one instruction with another)
+- 06 ~ constant phi elimination (think of better example or application of phis) (dealing with phi-nodes)
+- 07 + Function analysis (getting familiar with analysis passes)
+- 08 + Loop analysis (getting familiar with loop analysis)
+- 09 ~ simple vectorizer (refactor and simplify example) (cloning and transforming basic blocks in LLVM)
+- 10 + toy lambda language (constructing tiny language and lower its AST to LLVM)
+- 11 + extending lambda grammar with `^` (lowering tiny language construction to intrinsic function)
+
 ## Syllabus
 
 | Date         | lecture                                                                        | practice                                                           |
@@ -42,11 +57,10 @@ Some supplementary materials can be found [here](links.md).
 |~~12-03-2021~~| [~~Compiler optimizations: part 1~~](lectures/7-optimizations.md)              | [~~Lab #3: analysis pass~~](practices/p5/assignment.md)            |
 |~~19-03-2021~~| [~~Compiler optimizations: part 2~~](lectures/7-optimizations.md)              | ~~Assignment #3: Discussion~~                                      |
 |~~26-03-2021~~| [~~Dominators. Multi-level IR](lectures/8-dominators.md)                       | [~~Toy language~~](practices/p6/assignment.md)                     |
-|  05-04-2021  | Code generation. Liveness                                                      | [Lab #4: custom operator](practices/p6/assignment.md)              |
-|  12-04-2021  | Instruction selection                                                          | Assignment #4: Discussion                                          |
-|  19-04-2021  | Instruction scheduling                                                         | [MLIR introduction](practices/p7/assignment.md)                    |
-|  26-04-2021  | Register allocation. Linear scan register allocation                           | Final Test 1                                                       |
-|  03-05-2021  | Concluding words.                                                              | Final Test 2                                                       |
+|~~05-04-2021~~| [~~Code generation~~](lectures/9-codegen.md)                                   | [~~Toy language~~](practices/p6/assignment.md)                     |
+|~~16-04-2021~~| ~~Concluding words~~                                                           | ~~Assignment #4: adding custom operator~~                          |
+|**19-04-2021**| [Liveness. Register allocation](lectures/10-liveness.md)                       | Assignment #4: Discussion                                          |
+|  26-04-2021  | Final Test                                                                     | Scoring                                                            |
 
 ## Lab works
 
@@ -60,7 +74,7 @@ Some supplementary materials can be found [here](links.md).
 1. Lab 3 (19.03.2021) : Writing analysis pass
     1. Example: function Analysis
     1. Assignment:
-1. Lab 3 (06.04.2021) : Extending toy language with custom operator
+1. Lab 4 (06.04.2021) : Extending toy language with custom operator
     1. postfix language from Grammar in lecture
     1. lowering to llvm
     1. Assignment: adding ^ operator as it was on lecture
@@ -75,7 +89,4 @@ Some supplementary materials can be found [here](links.md).
 
 ## Scoring
 
-1. 4 lab works 0.15 each (Analysis pass, transformation pass, toy language, MLIR dialect)
-1. 2 final tests 0.20 each
-
-One can skip final test by passing all practices and lab works.
+1. 4 lab works and 1 final test 2pt each.
