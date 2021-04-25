@@ -73,8 +73,8 @@ Some supplementary materials can be found [here](links.md).
 |~~26-03-2021~~| [~~Dominators. Multi-level IR](lectures/8-dominators.md)          | [~~Toy language~~](practices/p6/assignment.md)                     |
 |~~05-04-2021~~| [~~Code generation~~](lectures/9-codegen.md)                      | [~~Toy language~~](practices/p6/assignment.md)                     |
 |~~16-04-2021~~| ~~Concluding words~~                                              | ~~Assignment #4: adding custom operator~~                          |
-|**19-04-2021**| [Liveness. Register allocation](lectures/10-liveness.md)          | Assignment #4: Discussion                                          |
-|  26-04-2021  | Final Test                                                        | Scoring                                                            |
+|~~19-04-2021~~| [~~Liveness. Register allocation~~](lectures/10-liveness.md)      | ~~Assignment #4: Discussion~~                                      |
+|**26-04-2021**| Final Test                                                        | Scoring                                                            |
 
 ## Lab works
 
