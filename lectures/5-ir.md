@@ -1,5 +1,67 @@
 # Intermediate representation
 
+Frontend - analysis phase
+Backend - synthesis phase
+
+Module
+
+Passes
+1. analysis
+1. transformation
+
+Basic Block
+1. leader
+1. terminal
+
+3x address code
+
+`def <- op  arg0 arg1`
+Ex:
+`+ a t0`
+`br target {}`
+`LT a b`
+`[] ptr i`
+
+S - statement
+E - expression
+T - term
+F - factor
+id - identifier
+
+```
+S => id = E {gen (id.name = E.vreg) }
+E => E + T  { E.vreg = newTmp(); gen (E.vreg = E.vreg + T.vreg) }
+   / T      { E.vreg = T.vreg }
+T => T * F  { T.vreg = newTmp(); gen (T.vreg = T.vreg * F.vreg) }
+   / F      { T.vreg = F.vreg }
+F => id     { E.vreg = id.name }
+
+x = a + b * c
+```
+
+```
+t0 = b * c
+t1 = a + t0
+x = t1
+```
+
+AST + semantic rules -> 3 address code
+AST -> postfix form -> 3 address code
+
+Encoding:
+
+1. triples op src0 src1
+  ```
+  (0) * b c
+  (1) + a (0)
+  (2) = (1)
+  ```
+1. quadruples dst op src0 src1
+  ```
+  t0 * b c
+  t1 + a t0
+  x = t1 {}
+  ```
 
 ## Hierarchical IR
 
@@ -60,3 +122,4 @@ AST -> IR -> ASM
 classic: AST -> IR -> IR -> IR -> IR -> ASM
 hierarchical: AST -> IR0 -> IR1 -> IR2 -> IR3 -> ASM
 IRi - dialect
+lowering - legalize IR for dialect i.
