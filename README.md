@@ -40,24 +40,46 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 1. Linux/MacOS tested, Windows compatible
 1. Streamed online over Zoom/MSTeams
 
+## Syllabus
+
+| Date         | lecture                                                           | practice                                                           |
+| ------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------ |
+| UNSPECIFIED  | [Modern compiler architecture](lectures/0-architecture.md)        | [Setting up for the course](practices/p0/assignment.md)            |
+| UNSPECIFIED  | [Lexical analysis](lectures/1-lexer.md)                           | [Building llvm from sources](practices/p1/assignment.md)           |
+| UNSPECIFIED  | [Grammar: ambiguity & left-recursion](lectures/2-grammar.md)      | Assignment #1 Writing statistics pass                              |
+| UNSPECIFIED  | [Grammar: determinism. Parsers. AST](lectures/3-parser.md)        | Assignment #1: Free discussion                                     |
+| UNSPECIFIED  | [Semantic analysis. SDT](lectures/4-semantic.md)                  | Assignment #1: Hand in                                             |
+|              |                                                                   |                                                                    |
+| UNSPECIFIED  | [Intermediate representation](lectures/5-ir.md)                   | Assignment #2: Algebraic simplification                            |
+| UNSPECIFIED  | [SSA, Phi-nodes, CFG](lectures/6-ssa.md)                          | Assignment #2: Free discussion                                     |
+| UNSPECIFIED  | [Compiler optimizations](lectures/7-optimizations.md)             | Assignment #2: Hand in                                             |
+| UNSPECIFIED  | [Dominators](lectures/7-optimizations.md)                         | Assignment #3: Analysis pass                                       |
+| UNSPECIFIED  | [Multi-level IR](lectures/8-dominators.md)                        | Assignment #3: Free discussion                                     |
+|              |                                                                   |                                                                    |
+| UNSPECIFIED  | [Code generation](lectures/9-codegen.md)                          | Assignment #3: Hand in                                             |
+| UNSPECIFIED  | Target representation                                             | Assignment #4: Toy languadge                                       |
+| UNSPECIFIED  | [Liveness. Register allocation](lectures/10-liveness.md)          | Assignment #4: Free discussion                                     |
+| UNSPECIFIED  | Instruction sceduling                                             | Assignment #4: Hand in                                             |
+| UNSPECIFIED  | Concluding words                                                  | **Final Test**                                                     |
+
+
 ## List of lecture notes
 
-- 00 ~ architecture
-- 01 ~ lexer
-- 02 ~ grammar
-- 03 ~ parser
-- 04 ~ semantics
-- 05 ~ ir
-- 06 ~ ssa
-- 07 ~ optimizations
-- 08 ~ dominators
-- 09 ~ codegen
-- 10 ~ liveness
-- 11
-- 12
-- 13
-- 14
-- 15
+- 01 ~ architecture
+- 02 ~ lexer
+- 03 ~ grammar
+- 04 ~ parser
+- 05 ~ semantics
+- 06 ~ ir
+- 07 ~ ssa
+- 08 ~ optimizations
+- 09 ~ dominators
+- 10 - mlir
+- 11 ~ codegen
+- 12 - target
+- 13 ~ liveness
+- 14 - scheduling
+- 15 ~ concluding words
 
 ## List of practical exercises
 
@@ -67,38 +89,13 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 - 04 + AS (getting familiar with transformation passes, deleting an instruction)
 - 05 + SR (creating an instruction, replacing one instruction with another)
 - 06 ~ constant phi elimination (think of better example or application of phis) (dealing with phi-nodes)
+
 - 07 + Function analysis (getting familiar with analysis passes)
 - 08 + Loop analysis (getting familiar with loop analysis)
 - 09 ~ simple vectorizer (refactor and simplify example) (cloning and transforming basic blocks in LLVM)
 - 10 + toy lambda language (constructing tiny language and lower its AST to LLVM)
-- 11 + extending lambda grammar with `^` (lowering tiny language construction to intrinsic function)
-- 12
-- 13
-- 14
 
-
-## Syllabus
-
-| Date         | lecture                                                           | practice                                                           |
-| ------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------ |
-| UNSPECIFIED  | [~~Modern compiler architecture~~](lectures/0-architecture.md)    | [~~Setting up for the course~~](practices/p0/assignment.md)        |
-| UNSPECIFIED  | [~~Lexical analysis~~](lectures/1-lexer.md)                       | [~~Building llvm from sources~~](practices/p1/assignment.md)       |
-| UNSPECIFIED  | [~~Grammar:ambiguity and left-recursion~~](lectures/2-grammar.md) | [~~Developing with LLVM~~](practices/p2/assignment.md)             |
-| UNSPECIFIED  | [~~Grammar: determinism. Parsers. AST~~](lectures/3-parser.md)    | [~~Lab #1: statement counting pass~~](practices/p3/assignment.md)  |
-| UNSPECIFIED  | [~~Semantic analysis. SDT~~](lectures/4-semantic.md)              | ~~Assignment #1: Discussion~~                                      |
-|              |                                                                   |                                                                    |
-| UNSPECIFIED  | [~~Intermediate representation~~](lectures/5-ir.md)               | [~~Lab #2: algebraic simplification~~](practices/p4/assignment.md) |
-| UNSPECIFIED  | [~~SSA, Phi-nodes, CFG~~](lectures/6-ssa.md)                      | ~~Assignment #2: Discussion~~                                      |
-| UNSPECIFIED  | [~~Compiler optimizations: part 1~~](lectures/7-optimizations.md) | [~~Lab #3: analysis pass~~](practices/p5/assignment.md)            |
-| UNSPECIFIED  | [~~Compiler optimizations: part 2~~](lectures/7-optimizations.md) | ~~Assignment #3: Discussion~~                                      |
-| UNSPECIFIED  | [~~Dominators. Multi-level IR~~](lectures/8-dominators.md)        | [~~Toy language~~](practices/p6/assignment.md)                     |
-|              |                                                                   |                                                                    |
-| UNSPECIFIED  | [~~Code generation~~](lectures/9-codegen.md)                      | [~~Toy language~~](practices/p6/assignment.md)                     |
-| UNSPECIFIED  | ~~Concluding words~~                                              | ~~Assignment #4: adding custom operator~~                          |
-| UNSPECIFIED  | [~~Liveness. Register allocation~~](lectures/10-liveness.md)      | ~~Assignment #4: Discussion~~                                      |
-| UNSPECIFIED  |                                                                   |                                                                    |
-| UNSPECIFIED  |                                                                   | Final Test                                                         |
-
+\* *italic* deeper dive
 
 ## List of lab works
 
@@ -113,7 +110,7 @@ Supplementary materials for [**Theory and tools of translation and compilation**
     1. Assignment:
 1. Lab 4 (*due date* UNSPECIFIED) : Extending toy language with custom operator
     1. Example: lowering to llvm postfix language from Grammar from lectures 
-    1. Assignment: adding ^ operator as it was on lecture
+    1. Assignment: extending lambda grammar with `^` (lowering tiny language construction to intrinsic function)
 
 ## Supplementary materials
 
