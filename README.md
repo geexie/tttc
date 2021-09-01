@@ -89,7 +89,6 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 - 04 + AS (getting familiar with transformation passes, deleting an instruction)
 - 05 + SR (creating an instruction, replacing one instruction with another)
 - 06 ~ constant phi elimination (think of better example or application of phis) (dealing with phi-nodes)
-
 - 07 + Function analysis (getting familiar with analysis passes)
 - 08 + Loop analysis (getting familiar with loop analysis)
 - 09 ~ simple vectorizer (refactor and simplify example) (cloning and transforming basic blocks in LLVM)
