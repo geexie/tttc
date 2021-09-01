@@ -86,19 +86,19 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 | UNSPECIFIED  | [~~Grammar:ambiguity and left-recursion~~](lectures/2-grammar.md) | [~~Developing with LLVM~~](practices/p2/assignment.md)             |
 | UNSPECIFIED  | [~~Grammar: determinism. Parsers. AST~~](lectures/3-parser.md)    | [~~Lab #1: statement counting pass~~](practices/p3/assignment.md)  |
 | UNSPECIFIED  | [~~Semantic analysis. SDT~~](lectures/4-semantic.md)              | ~~Assignment #1: Discussion~~                                      |
-| ------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------ |
+|              |                                                                   |                                                                    |
 | UNSPECIFIED  | [~~Intermediate representation~~](lectures/5-ir.md)               | [~~Lab #2: algebraic simplification~~](practices/p4/assignment.md) |
 | UNSPECIFIED  | [~~SSA, Phi-nodes, CFG~~](lectures/6-ssa.md)                      | ~~Assignment #2: Discussion~~                                      |
 | UNSPECIFIED  | [~~Compiler optimizations: part 1~~](lectures/7-optimizations.md) | [~~Lab #3: analysis pass~~](practices/p5/assignment.md)            |
 | UNSPECIFIED  | [~~Compiler optimizations: part 2~~](lectures/7-optimizations.md) | ~~Assignment #3: Discussion~~                                      |
 | UNSPECIFIED  | [~~Dominators. Multi-level IR~~](lectures/8-dominators.md)        | [~~Toy language~~](practices/p6/assignment.md)                     |
-| ------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------ |
+|              |                                                                   |                                                                    |
 | UNSPECIFIED  | [~~Code generation~~](lectures/9-codegen.md)                      | [~~Toy language~~](practices/p6/assignment.md)                     |
 | UNSPECIFIED  | ~~Concluding words~~                                              | ~~Assignment #4: adding custom operator~~                          |
 | UNSPECIFIED  | [~~Liveness. Register allocation~~](lectures/10-liveness.md)      | ~~Assignment #4: Discussion~~                                      |
 | UNSPECIFIED  |                                                                   |                                                                    |
 | UNSPECIFIED  |                                                                   | Final Test                                                         |
-| ------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------ |
+
 
 ## List of lab works
 
