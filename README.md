@@ -1,21 +1,25 @@
-# PCD
+# TTTC
 
 Supplementary materials for [**Theory and tools of translation and compilation**](https://www.hse.ru/edu/courses/339578065) course.
 
 ## This course contains of
 
-1. weekly 14 lectures
-1. weekly 14 weekly practical exercises
+1. 15 lectures
+1. 15 practices
 1. 4 course works
 1. 1 theory test
 
-Some supplementary materials can be found [here](links.md).
+## Scoring
+
+1. 4 lab works (2pt each) and 1 final test with 8 questions (0.25pt each)
+1. labs are accepted as MR into [llvm-project]() repository into hse-22 branch
+1. final test is done during last practice class
 
 ## What we are going to learn with this course?
 
-1. Architecture of modern compiler
+1. Architecture of modern compilers
     1. What happens if you call `clang` to compile you code?
-1. A bit of theory required to read/understand literature related to a compiler domain
+1. A bit of theory required to read/understand literature and codes related to a compiler domain
     1. Context-free grammars, Dominators, Graph coloring and a bit more
 1. Basic understanding how is to build a compiler/create a programming language
     1. Language construction
@@ -28,6 +32,15 @@ Some supplementary materials can be found [here](links.md).
     1. VSCode
     1. git
     1. CMake
+    1. ninja
+
+## Setup
+
+1. Practices presented in \*nix environment
+1. Linux/MacOS tested
+1. online over Zoom/MSTeams
+1. VSCode
+1. LLVM
 
 ## List of practical exercises for LLVM introductory course
 
@@ -93,14 +106,6 @@ Some supplementary materials can be found [here](links.md).
     1. lowering to llvm
     1. Assignment: adding ^ operator as it was on lecture
 
-## Setup
 
-1. Practices presented in \*nix environment
-1. Linux/MacOS
-1. online over Zoom
-1. VSCode
-1. LLVM
 
-## Scoring
-
-1. 4 lab works and 1 final test 2pt each.
+Supplementary, yet optional materials for futher diving into the subject can be found [here](links.md).
