@@ -63,7 +63,7 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 | UNSPECIFIED  | Concluding words                                                  | **Final Test**                                                     |
 
 
-## List of lecture notes
+## List of lectures
 
 - 01 ~ architecture
 - 02 ~ lexer
@@ -81,35 +81,32 @@ Supplementary materials for [**Theory and tools of translation and compilation**
 - 14 - scheduling
 - 15 ~ concluding words
 
-## List of practical exercises
+## List of labs
 
-- 01 + setting up & building & tools (clang, opt, llc)
-- 02 + empty pass (getting familiar with LLVM pass structure)
-- 03 + count pass (data structures & iterators in LLVM)
-- 04 + AS (getting familiar with transformation passes, deleting an instruction)
-- 05 + SR (creating an instruction, replacing one instruction with another)
-- 06 ~ constant phi elimination (think of better example or application of phis) (dealing with phi-nodes)
-- 07 + Function analysis (getting familiar with analysis passes)
-- 08 + Loop analysis (getting familiar with loop analysis)
-- 09 ~ simple vectorizer (refactor and simplify example) (cloning and transforming basic blocks in LLVM)
-- 10 + toy lambda language (constructing tiny language and lower its AST to LLVM)
+1. Lab 1 (*due date* UNSPECIFIED) : **Writing statistics pass**
+    1. Class work: empty pass (*what we learn*: getting familiar with LLVM pass structure)
+    1. Assignment: count mull/add/functions/loops (*what we learn*: data structures & iterators in LLVM)
+1. Lab 2 (*due date* UNSPECIFIED) : **Writing transformation pass**
+    1. Class work: AS for add with 0 (*what we learn*: getting familiar with transformation passes, deleting an instruction)
+    1. Assignment: AS for mul with 1 & SR for pow(x, 2) with x * x (*what we learn*: creating an instruction, replacing one instruction with another)
+1. Lab 3 (*due date* UNSPECIFIED) : **Writing analysis pass**
+    1. Class work: function Analysis (*what we learn*: getting familiar with analysis passes)
+    1. Assignment: finding trivially vectorizable loops (*what we learn*: getting familiar with loop analysis)
+1. Lab 4 (*due date* UNSPECIFIED) : **Extending a tiny language with custom operator**
+    1. Class work: lowering tiny postfix lambda language to llvm from Grammar from lectures (*what we learn*: constructing tiny language and lower its AST to LLVM)
+    1. Assignment: extending lambda grammar with `^` (lowering tiny language construction to intrinsic function)
+
+## List of practical exercises (excluding labs)
+
+- 01 + setting up & building llvm
+- 02 - llvm developer workwlow and tools overview (clang, opt, llc)
+- 03 ~ *constant phi elimination (think of better example or application of phis) (dealing with phi-nodes)*
+- 04 ~ *simple vectorizer (refactor and simplify example) (cloning and transforming basic blocks in LLVM)*
+- 05 - *TBD*
+- 06 - *TBD*
 
 \* *italic* deeper dive
 
-## List of lab works
-
-1. Lab 1 (*due date* UNSPECIFIED) : Writing statistics pass
-    1. Example: empty pass
-    1. Assignment: count mull/add/functions/loops
-1. Lab 2 (*due date* UNSPECIFIED) : Writing transformation pass
-    1. Example: add with 0
-    1. Assignment: mul with 1 & pow(x, 2) with x * x
-1. Lab 3 (*due date* UNSPECIFIED) : Writing analysis pass
-    1. Example: function Analysis
-    1. Assignment:
-1. Lab 4 (*due date* UNSPECIFIED) : Extending toy language with custom operator
-    1. Example: lowering to llvm postfix language from Grammar from lectures 
-    1. Assignment: extending lambda grammar with `^` (lowering tiny language construction to intrinsic function)
 
 ## Supplementary materials
 
