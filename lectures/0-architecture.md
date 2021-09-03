@@ -2,11 +2,9 @@
 
 ## what is a compiler?
 
-A program that translates an executable program in one language into an executable program in another language.
-
-The compiler must not change programmer's intentions and always produce *correct* code.
-
-The compiler might improve the program, in some way. This is usually related to performance, but also providing high level of abstraction over target machine and it's capabilities.
+- A program that translates a program written in one language into an program written in another language.
+- The compiler must not change programmer's intentions and always produce *correct* code.
+- The compiler might improve the program, in some way. This is usually related to performance, but also providing high level of abstraction over target machine and it's capabilities.
 
 ## What is an interpreter?
 
@@ -38,14 +36,13 @@ A program that directly execute an executable program, producing the results of 
 
 ## Why study compilation?
 
-- Compilers are important system software components: they are intimately interconnected with architecture, systems, programming methodology, and language design
+- Compilers are important system software components: they are intimately interconnected with architecture, systems, programming methodology, and language design.They are a glue.
 - Compilers include many applications of theory to practice: scanning, parsing, static analysis, instruction selection
 - Many practical applications have embedded languages: commands, macros, formatting tags
 - Many applications have input formats that look like languages: Matlab, Mathematica
 - Writing a compiler exposes practical algorithmic & engineering issues:
 approximating hard problems; efficiency & scalability
-
-# Do you know that Donald Knuth book evolves from a book about compiler design
+- **Do you know that Donald Knuth book series evolves from a book about compiler design?**
 
 Compiler construction involves ideas from many different parts of computer science
 
@@ -56,13 +53,15 @@ Compiler construction involves ideas from many different parts of computer scien
     - Graph algorithms
     - Dynamic programming
 - Theory
-    - DFA & PDA, pattern matching
+    - DFA (Deterministic Finite Automata) & PDA (Push Down Automata)
+    - Pattern matching
     - Fixed-point algorithms
 - Systems
     - Allocation & naming
     - Synchronization, locality
 - Architecture
-    - Pipeline & memory hierarchy management Instruction set
+    - Pipeline & memory hierarchy management
+    - Instruction set
 - Software engineering
     - Architecture, modularity
 
@@ -74,13 +73,16 @@ Compiler construction poses challenging and interesting problems:
 - Compilers have primary responsibility for run-time performance
 - Compilers are responsible for making it acceptable to use the full power of the programming language
 - Computer architects perpetually create new challenges for the compiler by building more complex machines
-- Compilers must hide that complexity from the programmer Success requires mastery of complex interactions
+- Compilers must hide that complexity from the programmer 
+- Success requires mastery of complex interactions
 
 # 1. High-level view of a compiler
 
+```
  Source code ---> [Compiler] ----> Machine code
                       |
                       |----> diagnostics
+```
 
 - Must recognize legal (and illegal) programs
 - Must generate correct code
@@ -91,21 +93,25 @@ Compiler construction poses challenging and interesting problems:
 
 # 1. Traditional two-pass compiler
 
+```
  Source code ---> [Front end] ----> IR ----> [Back end] ----> Machine code
                       |                          |
                       |--------------------------|----> diagnostics
+```
 
 - Use an intermediate representation (IR)
 - Front end maps legal source code into IR
 - Back end maps IR into target machine code
 
-*Admits multiple front ends & multiple passes*
+*Admits multiple front ends & multiple passes & multiple backends. Compiler complexity O(n+m)*
 
 Typically, front end is O(n) or O(n log n), while back end is NP (NP-complete)
 
 # The Frontend
 
+```
 Source code ---> [Lexer] ---> token ---> [Parser] ---> AST ---> [Semantic Analyser] ---> AST ---> [IR Generator] ---> IR
+```
 
 - Recognise legal (& illegal) programs
 - Report errors in a useful way
@@ -116,8 +122,9 @@ Source code ---> [Lexer] ---> token ---> [Parser] ---> AST ---> [Semantic Analys
 
 # The Lexer
 
+```
 Source code ---> [Scanner] ---> char ---> [Tokenizer] ---> token ...
-
+```
 
 - Lexical analysis
 - Recognises words in a character stream
@@ -129,7 +136,9 @@ Source code ---> [Scanner] ---> char ---> [Tokenizer] ---> token ...
 
 # The Parser
 
+```
 token ---> [Parser] ---> AST
+```
 
 - Recognizes context-free syntax & reports errors
 - Hand-coded parsers are fairly easy to build
@@ -137,7 +146,9 @@ token ---> [Parser] ---> AST
 
 # Semantic Analyser
 
+```
 AST ---> [Semantic Analyser] ---> AST
+```
 
 - Guides context-sensitive (“semantic”) analysis
 - Checks variable and function declared before use
@@ -145,14 +156,18 @@ AST ---> [Semantic Analyser] ---> AST
 
 # IR Generator
 
+```
 AST ---> [IR generator] ---> IR
+```
 
 - Generates the IR used by the rest of the compiler.
 - Sometimes the AST is the IR (e.g. DL graph compilers).
 
 # The Back end
 
+```
 IR ---> [Instruction Selection] ---> AST ---> [Register allocation] ---> AST ---> [Instruction scheduling] ---> Machine code
+```
 
 - Translate IR into target machine code
 - Choose instructions to implement each IR operation
@@ -162,7 +177,9 @@ IR ---> [Instruction Selection] ---> AST ---> [Register allocation] ---> AST ---
 
 # Instruction Selection
 
+```
 IR ---> [Instruction Selection] ---> AST
+```
 
 - Produce fast, compact code
 - Take advantage of target features such as addressing modes
@@ -172,7 +189,9 @@ IR ---> [Instruction Selection] ---> AST
 
 # Register Allocation
 
+```
 AST ---> [Register allocation] ---> AST
+```
 
 - Have each value in a register when it is used
 - Manage a limited set of resources
@@ -183,7 +202,9 @@ AST ---> [Register allocation] ---> AST
 
 # Instruction Scheduling
 
+```
 AST ---> [Instruction scheduling] ---> Machine code
+```
 
 - Avoid hardware stalls and interlocks
 - Use all functional units productively
@@ -194,7 +215,9 @@ AST ---> [Instruction scheduling] ---> Machine code
 
 # 3. Three Pass Compiler
 
+```
  Source code ---> [Front end] ----> IR ---> [Optimizer] ----> IR ----> [Back end] ----> Machine code
+```
 
 - Code Improvement (or Optimization)
 - Analyses IR and rewrites (or transforms) IR
@@ -208,7 +231,9 @@ AST ---> [Instruction scheduling] ---> Machine code
 
 Modern optimizers are structured as a series of passes e.g. LLVM
 
+```
 IR ---> [Opt 0] ----> IR ---> [Opt 1] ----> IR ----> [Opt 2] ----> IR
+```
 
 - Discover & propagate some constant value
 - Move a computation to a less frequently executed place
@@ -219,7 +244,9 @@ IR ---> [Opt 0] ----> IR ---> [Opt 1] ----> IR ----> [Opt 2] ----> IR
 
 # 4. Modern Restructuring Compiler
 
+```
 IR ---> [Opt 0] ----> IR opset 0 ---> [Opt 1] ----> IR opset 1 ----> [Opt 2] ----> IR
+```
 
 - Translate from high-level (HL) IR to low-level (LL) IR
 - Blocking for memory hierarchy and register reuse
