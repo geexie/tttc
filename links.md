@@ -23,3 +23,7 @@
 1. [Agner Fog's resources on optimization for x86_64 targets](https://www.agner.org/optimize/)
 1. ["Engineering a Compiler" by Keith Cooper & Linda Torczon, 2nd edition](http://www.r-5.org/files/books/computers/compilers/writing/Keith_Cooper_Linda_Torczon-Engineering_a_Compiler-EN.pdf)
 1. "Compilers: Principles, Techniques, and Tools" by Alfred V. Aho, Monica S. Lam, Ravi Sethi, and Jeffrey D. Ullman
+
+## Curiously geeky things about compilers and programming languages
+
+1. [PyCon 2019: lambda calculus implemented in Python](https://youtu.be/5C6sv7-eTKg) - three hours of laughing loud
