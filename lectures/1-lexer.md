@@ -2,7 +2,9 @@
 
 ## The Lexer
 
+```
 Source code ---> [Scanner] ---> char ---> [Tokenizer] ---> token ...
+```
 
 - Recognizes words in a character stream
 - Produces tokens (words) from lexeme (== literal)
@@ -147,6 +149,7 @@ F => e
 ```
 
 Word:
+
 ```
 w = x + y * z
 madd w x y z
@@ -163,7 +166,9 @@ w: id + id * id
 
 what if we start with 1st rule
 
+```
 E => E + E
+```
 
 Left most derivation
 
