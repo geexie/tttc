@@ -16,11 +16,13 @@ Basic Block
 3x address code
 
 `def <- op  arg0 arg1`
+
 Ex:
-`+ a t0`
-`br target {}`
-`LT a b`
-`[] ptr i`
+
+1. `+ a t0`
+2. `br target {}`
+3. `LT a b`
+4. `[] ptr i`
 
 S - statement
 E - expression
